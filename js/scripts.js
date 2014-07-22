@@ -13,8 +13,10 @@ var Tamagotchi = {
     Tamagotchi.initialize();
     if (this.foodLevel > 0) {
       return true;
+    } else {
+      return false;
     }
+  },
 
-  }
 };
 

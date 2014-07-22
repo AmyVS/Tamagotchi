@@ -24,6 +24,12 @@ describe("Tamagotchi", function() {
       var myPet = Object.create(Tamagotchi);
       myPet.isAlive().should.equal(true);
     });
+
+    it("is dead if the food level is 0", function() {
+      var myPet = Object.create(Tamagotchi);
+      myPet.foodLevel = 0;
+      myPet.isAlive().should.equal(false);
+    });
   });
 
 });
