@@ -8,36 +8,39 @@
   <title>Tamagotchi</title>
 </head>
 <body class="container">
-  <h1>Don't kill the Tamagotchi</h1>
-  <div class="row">
-    <div class="col-md-4">
-      <div id="food-level">
-        <h5>FEED ME!</h5>
-        <p></p>
+  <div id="alive">
+    <h1>Don't kill the Tamagotchi</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div id="food-level">
+          <h5>FEED ME!</h5>
+          <p></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div id="sleep-level">
+          <h5>I'M TIRED!</h5>
+          <p></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div id="activity-level">
+          <h5>PLAY WITH ME!</h5>
+          <p></p>
+        </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div id="sleep-level">
-        <h5>I'M TIRED!</h5>
-        <p></p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div id="activity-level">
-        <h5>PLAY WITH ME!</h5>
-        <p></p>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div id="status">
-    </div>
-  </div>
-  <div class="row">
-    <div id="start">
-    </div>
-  </div>
 
+    <div class="row">
+      <div id="start">
+        <h3>START</h3>
+      </div>
+    </div>
+  </div>
+  <div id="dead">
+    <h1>Oh my god!!! You've killed <span id="name"></span>!</h1>
+    <img src="https://typhoon-production.s3.amazonaws.com/uploads/image_attachment/image_attachment/650/inline_Beloved_Tamagotchi_by_hoschie.jpg">
+  </div>
 
 </body>
 </html>

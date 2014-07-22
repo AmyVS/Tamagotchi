@@ -1,9 +1,9 @@
 var Tamagotchi = {
   initialize: function(name) {
     this.name = name;
-    this.foodLevel = 10;
-    this.sleepLevel = 10;
-    this.activityLevel = 10;
+    this.foodLevel = 3;
+    this.sleepLevel = 3;
+    this.activityLevel = 3;
   },
   timePasses: function() {
     this.foodLevel -= 1;
@@ -35,7 +35,9 @@ $(document).ready(function(){
         $("#sleep-level p").text(newTamagotchi.sleepLevel);
         $("#activity-level p").text(newTamagotchi.activityLevel);
       } else {
-        $("#start").text("DEAD!");
+        $("#alive").hide();
+        $("#dead").fadeIn(3000);
+        $("#name").text(newTamagotchi.name);
         clearInterval(timer);
       }
     }, 1000);
