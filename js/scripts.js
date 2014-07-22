@@ -6,8 +6,7 @@ var Tamagotchi = {
     this.activityLevel = 10;
   },
   timePasses: function() {
-    setInterval(Tamagotchi.initialize, 1000);
-    this.foodLevel = this.foodLevel - 1;
+    this.foodLevel -= 1;
   },
   isAlive: function() {
     Tamagotchi.initialize();
@@ -20,3 +19,20 @@ var Tamagotchi = {
 
 };
 
+
+$(document).ready(function(){
+  $("#start").click(function(event) {
+    var newTamagotchi = Object.create(Tamagotchi);
+    newTamagotchi.initialize(prompt('Name your Tamagotchi!'));
+    newTamagotchi.timePasses();
+    $("#start").append("<p>" + newTamagotchi.foodLevel + "</p>");
+
+    // var count = 0;
+    // var time = window.setInterval(function(){
+    //   count += 1;
+    //   console.log(count);
+    // },1000)
+
+
+  });
+});
