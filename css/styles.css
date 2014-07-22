@@ -1,11 +1,3 @@
-#food-level{
-  border: 2px solid #FF9900;
-  width: 150px;
-  height: 150px;
-  background-color: #FF9900;
-  margin: 40px auto 0 auto;
-}
-
 h3 {
   text-align: center;
   font-weight: bold;
@@ -21,21 +13,49 @@ p {
   text-align: center;
 }
 
+
+#food-level{
+  border: 2px solid #FF9900;
+  width: 200px;
+  height: 200px;
+  background-color: #FF9900;
+  margin: 40px auto 0 auto;
+}
+
+#food-level:hover {
+  cursor: pointer;
+  width: 210px;
+  height: 210px;
+}
+
 #sleep-level{
   border: 2px solid #6699FF;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: #6699FF;
   margin: 40px auto 0 auto;
 }
 
+#sleep-level:hover {
+  cursor: pointer;
+  width: 210px;
+  height: 210px;
+}
+
 #activity-level{
   border: 2px solid #7EBF7E;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: #7EBF7E;
   margin: 40px auto 0 auto;
 }
+
+#activity-level:hover {
+  cursor: pointer;
+  width: 210px;
+  height: 210px;
+}
+
 
 #status{
   border: 2px solid #FF7A7A;
@@ -53,12 +73,29 @@ p {
   margin: 40px auto 0 auto;
 }
 
+#start:hover {
+  cursor: pointer;
+}
+
+#restart{
+  border: 2px solid #AB1515;
+  width: 300px;
+  height: 70px;
+  background-color: #AB1515;
+  margin: 40px auto 0 auto;
+}
+
+#restart:hover {
+  cursor: pointer;
+}
+
 #dead{
   display: none;
 }
 
 h1 {
   font-size: 8em;
+  text-align: center;
 }
 
 img {

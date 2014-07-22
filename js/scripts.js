@@ -1,9 +1,9 @@
 var Tamagotchi = {
   initialize: function(name) {
     this.name = name;
-    this.foodLevel = 3;
-    this.sleepLevel = 3;
-    this.activityLevel = 3;
+    this.foodLevel = 10;
+    this.sleepLevel = 10;
+    this.activityLevel = 10;
   },
   timePasses: function() {
     this.foodLevel -= 1;
@@ -22,8 +22,11 @@ var Tamagotchi = {
 };
 
 
+
 $(document).ready(function(){
+
   $("#start").click(function(event) {
+    $("#start").hide()
     var newTamagotchi = Object.create(Tamagotchi);
     newTamagotchi.initialize(prompt('Name your Tamagotchi!'));
 
@@ -42,15 +45,26 @@ $(document).ready(function(){
       }
     }, 1000);
 
-    $("#food-level").click(function() {
-      newTamagotchi.foodLevel += 1
+    $("#food-level").click(function(event) {
+      newTamagotchi.foodLevel += 1;
+      $("#food-level p").text(newTamagotchi.foodLevel);
     });
-    $("#sleep-level").click(function() {
-      newTamagotchi.sleepLevel += 1
+
+    $("#sleep-level").click(function(event) {
+      newTamagotchi.sleepLevel += 1;
+      $("#sleep-level p").text(newTamagotchi.sleepLevel);
     });
-    $("#activity-level").click(function() {
-      newTamagotchi.activityLevel += 1
+
+    $("#activity-level").click(function(event) {
+      newTamagotchi.activityLevel += 1;
+      $("#activity-level p").text(newTamagotchi.activityLevel);
+
     });
+
+    $("#restart").click(function() {
+      document.location.reload();
+    });
+
   });
 
 });
