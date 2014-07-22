@@ -8,6 +8,13 @@ var Tamagotchi = {
   timePasses: function() {
     setInterval(Tamagotchi.initialize, 1000);
     this.foodLevel = this.foodLevel - 1;
+  },
+  isAlive: function() {
+    Tamagotchi.initialize();
+    if (this.foodLevel > 0) {
+      return true;
+    }
+
   }
 };
 
