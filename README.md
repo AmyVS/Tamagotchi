@@ -6,3 +6,7 @@ This is one of my first projects using Javascript Object Orientated design, jQue
 
 You can play the game here: http://amyvs.github.io/Tamagotchi/
 
+---
+**MIT License Copyright (c) 2014 Amy Vaillancourt-Sals and Ruben Rhodes **
+
+---
